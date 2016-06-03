@@ -1,14 +1,13 @@
-FROM node:4-onbuild
+FROM mhart/alpine-node:base
 
 MAINTAINER Chuka Ebi <chukaebi@yahoo.com>
 
 ADD /unicorn /unicorn
 
-EXPOSE 5000
-
 WORKDIR /unicorn
 
 RUN npm install
 
-CMD node app.js
+EXPOSE 5000
 
+CMD ["node", "app.js"]
