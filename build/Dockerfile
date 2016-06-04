@@ -1,4 +1,4 @@
-FROM mhart/alpine-node:base
+FROM mhart/alpine-node
 
 MAINTAINER Chuka Ebi <chukaebi@yahoo.com>
 
